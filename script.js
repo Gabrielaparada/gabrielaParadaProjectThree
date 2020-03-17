@@ -40,15 +40,9 @@ $(document).ready(function () {
 
       //display story
       $('.story').append(randomStory)
-      $('.story').append(`<br><button class="back">Let's try this again!</button>`).addClass("display")
+      $('.story').append(`<a href="./landingPage.html"><br><button class="back">Let's try this again!</button></a>`).addClass("display")
       $('input').val('')
-
-      //
-
-
    })
-
-
 })
 
 
