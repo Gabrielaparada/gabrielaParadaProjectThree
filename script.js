@@ -25,10 +25,10 @@ $(document).ready(function () {
          `<h2 class="sub-heading">Arrays</h2>
          Arrays are list-like <span>${adjective}</span> objects whose prototype has methods to <span>${verb}</span> traversal and mutation operations. Neither the length of a JavaScript array nor the types of its <span>${noun}</span> are fixed. Since an array's <span>${noun3}</span> can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript arrays are not <span>${noun2}</span> to be dense; this depends on how the programmer chooses to use them`,
 
-         `<h2>Styling text</h2>
+         `<h2 class="sub-heading">Styling text</h2>
          With the basics of the CSS <span>${noun}</span> covered, the next CSS topic for you to concentrate on is styling <span>${noun}</span> — one of the most <span>${adjective}</span> things you'll do with CSS. Here we look at <span>${noun}</span> styling fundamentals including setting font, boldness, italics, <span>${noun2}</span>, line and letter spacing, drop shadows, and other text features. We round off the module by looking at <span>${verb}</span> fonts to your page, and styling <span>${noun3}</span> and links.`,
 
-         `<h2>The THIS keyword</h2>
+         `<h2 class="sub-heading">The THIS keyword</h2>
          A function's this keyword ${verb} a little differently in JavaScript compared to other ${noun}. It also has some differences between strict mode and non-strict mode.
          In most cases, the ${noun2} of this is ${adjective} by how a function is called (runtime binding). It can't be set by assignment during ${noun3}, and it may be different each time the function is called`
       ]
