@@ -4,9 +4,9 @@ $(document).ready(function () {
       {
          id: "unicorn",
          title: "What happens when unicorns poop?",
-         completeStory: (pNoun, adjective, pAnimal, pNoun2, adjective2, color, noun, pNoun3, adjective3, verb, pNoun4, verbEd, verb2, noun5, adjective4 ) => `Unicorns aren't like other ${pNoun}; they're ${adjective}. They Look like ${pAnimal}, with ${pNoun2} for feet and a ${adjective2} mane of hair. But unicorns are ${color} and have a adjective ${noun} on their heads. Some ${pNoun3} don't believe unicorns are ${adjective3} but I believe in them. I would love to ${verb} a unicorn to faraway ${pNoun4} One thins i've always ${verbEd} about is wether unicorns ${verb2} rainbows or is their ${noun5} ${adjective4} like any other animal's`,
+         completeStory: (pNoun, adjective, pAnimal, pNoun2, adjective2, color, noun, pNoun3, adjective3, verb, pNoun4, verbEd, verb2, noun5, adjective4 ) => `Unicorns aren't like other ${pNoun}; they're ${adjective}. They Look like ${pAnimal}, with ${pNoun2} for feet and a ${adjective2} mane of hair. But unicorns are ${color} and have a ${adjective3} ${noun} on their heads. Some ${pNoun3} don't believe unicorns are ${adjective4} but I believe in them. I would love to ${verb} a unicorn to faraway ${pNoun4} One thins i've always ${verbEd} about is wether unicorns ${verb2} rainbows or is their ${noun5} ${adjective5} like any other animal's`,
          inputs: [
-            'pNoun', 'adjective', 'pAnimal', 'pNoun2', 'adjective2', 'color', 'noun', 'pNoun3', 'adjective', 'verb', 'pNoun4', 'verbEd', 'verb2', 'noun2', 'adjective3'
+            'pNoun', 'adjective', 'pAnimal', 'pNoun2', 'adjective2', 'color', 'adjective3', 'noun', 'pNoun3', 'adjective', 'verb', 'pNoun4', 'verbEd', 'verb2', 'noun2', 'adjective3'
          ]
       },
       {
@@ -44,15 +44,53 @@ $(document).ready(function () {
             return story['id'] === value;
          })
             console.log(findStory)
-         //get inputs
-         const inputs = findStory[0].inputs;
+         //get from story inputs
+         const storyInputs = findStory[0].inputs;
             console.log(inputs)
-      });
+   
+         $(".buttonSection2").on("click", function(){
+            //display input options    
+            $('.section2').css('display','none')
+            storyInputs.forEach(function (input){
+               $('.fillWords').append(`
+               <input class="wordsFromUser" type="text" name="input" id="${input}" placeholder="${input}" required=""><label class="visuallyHidden" for="${input}">${input}</label>`)
+            })
+            $('.fillWords').append(`<button class="buttonSection3" type="submit">click me</button>`)
+             //grab values from user 
+           
 
-      $(".buttonSection2").on("submit", function(){
-         //display input options 
-         //display story on submit
-      })
+
+
+
+
+
+            const inputFromUser = 
+            $('.fillWords').on('submit', function(e){
+               e.preventDefault();
+               console.log("clicked")
+               const results = 
+               $("input[name='input']").map(function (res){
+                  const inputResult = $("input[name='input']").val()
+                  return inputResult
+                  
+               })
+               console.log(results)
+               // var result = $("input[name='uID']")
+               //    .map(function (x, elm) { return elm.value; })
+               //    .get()
+               //    .join(',');
+               
+            })
+            
+            
+
+            $('.buttonSection2').on('click', function(){
+
+               //display story on submit
+
+            })
+         })
+      });
 
       
    })

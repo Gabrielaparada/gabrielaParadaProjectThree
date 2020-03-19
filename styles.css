@@ -12,7 +12,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
-
+.hidden{
+   display:none
+}
 .wrapper {
    width: 100vw;
    height: 100vh;
@@ -142,7 +144,7 @@ height: 100%;
    font-family: 'Rajdhani', sans-serif;
 }
 
-form{
+.inputDevelopers{
    display: flex;
    flex-direction: column;
    background-color: rgba(73, 109, 137, 0.7);
@@ -159,7 +161,6 @@ input{
    border: none;
    padding:10px;
    font-family: 'Rajdhani', sans-serif;
-   
 }
 
 .story{
@@ -410,6 +411,19 @@ h4{
    margin: 0 auto;
    margin-top: 200px;
 }
+.fillWords{
+   background-color: rgba(255, 255, 255, 0.2);
+   width: 80%;
+   /* margin-top: 186px; */
+   text-align: center;
+   /* margin-right: 25px;
+   margin-left: 112px; */
+   border-radius: 10px;
+   margin:0 auto;
+   margin-top: 100px;
+}
+
+
 
 input[type="radio"]{
    /* margin:0;
