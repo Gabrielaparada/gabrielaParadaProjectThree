@@ -19,39 +19,44 @@ $(document).ready(function () {
          ]
       }
    ]
+   // console.log(stories[0].id)
    console.log(stories)
 
 
-
-
-
-   // function storyChosen(e) {
-   //    //get value of radio button
-   //    const value = $('input[name="answer"]:checked').val()
-   //    console.log(value)
-   // }
-   // storyChosen()
-
-   $('.arrow').on('click', function(e){
-      console.log("submitted")
-      $('.notAdeveloper').css('display', 'none')
+//dynamically add radio buttons   
+   $('.arrow').on('click', function(){
+      $('.notADeveloper').css('display', 'none')
       $('.section2').append(`<h2>Choose your poison</h2>
       <label for="unicorn">🦄💩</label>
       <input type="radio" id="unicorn" name="answer" value="unicorn">
       <label for="winter">❄️</label>
       <input type="radio" id="winter" name="answer" value="winter">
-      <button class="buttonSection2" type="submit">hihihi</button>`)
+      <button class="buttonSection2" type="submit">Submit</button>`)
 
+      //get values from radio buttons
       $("input:radio[name=answer]").click(function () {
          const value = $(this).val();
          console.log(value)
+
+
+         //match values with array
+         const findStory = stories.filter(function (story) {
+            return story['id'] === value;
+         })
+            console.log(findStory)
+         //get inputs
+         const inputs = findStory[0].inputs;
+            console.log(inputs)
       });
+
+      $(".buttonSection2").on("submit", function(){
+         //display input options 
+         //display story on submit
+      })
+
+      
    })
 
-
-   
-
-   
 
    // select story
 
@@ -61,30 +66,9 @@ $(document).ready(function () {
       // add input to html with jquery append
    })
 
-   $("form").on("submit", function (e) {
-      //prevent default
-      e.preventDefault()
-
-      //grabbing value
-      const adjective = $('#adjective').val()
-      const noun = $('#noun').val()
-      const noun2 = $('#anotherNoun').val()
-      const noun3 = $('#yetAnotherNoun').val()
-      const verb = $('#verb').val()
-      // console.log(value, value2, value3)
-
-
-      // const randomStory = stories[Math.floor(Math.random() ${ stories.lengt})]
-
-      //hide form
-      $('form, h2').css("display", "none")
-
-      //display story
-      $('.story').append(randomStory)
-      $('.story').append(`<a href="./landingPage.html"><br><button class="back">Let's try this again!</button></a>`).addClass("display")
-      $('input').val('')
-   })
 })
 
 
+
+// const id = $(this).attr('id');
 

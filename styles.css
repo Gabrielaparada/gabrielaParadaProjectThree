@@ -266,7 +266,7 @@ h4{
 .background{
    background-image: url(./assets/darkness.png);
 }
-.notAdeveloper{
+.notADeveloper{
    color:white;
       width: 100vw;
    height: 100vh;
@@ -278,7 +278,7 @@ h4{
    font-size: 5rem;
 }
 
-.notAdeveloper h1{
+.notADeveloper h1{
    -webkit-animation-name: lightSpeedIn;
    animation-name: lightSpeedIn;
    -webkit-animation-timing-function: ease-out;
@@ -341,7 +341,7 @@ h4{
    font-size: 5rem;
 }
 
-.notAdeveloper a {
+.notADeveloper a {
    text-decoration: none;
    color:white;
    animation: bounce 2.5s ease-in-out, opacity 2s;
