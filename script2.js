@@ -4,9 +4,12 @@ $(document).ready(function () {
       {
          id: "unicorn",
          title: "What happens when unicorns poop?",
-         completeStory: (pNoun, adjective, pAnimal, pNoun2, adjective2, color, noun, pNoun3, adjective3, verb, pNoun4, verbEd, verb2, noun5, adjective4 ) => `Unicorns aren't like other ${pNoun}; they're ${adjective}. They Look like ${pAnimal}, with ${pNoun2} for feet and a ${adjective2} mane of hair. But unicorns are ${color} and have a ${adjective3} ${noun} on their heads. Some ${pNoun3} don't believe unicorns are ${adjective4} but I believe in them. I would love to ${verb} a unicorn to faraway ${pNoun4} One thins i've always ${verbEd} about is wether unicorns ${verb2} rainbows or is their ${noun5} ${adjective5} like any other animal's`,
+         completeStory: (pNoun, adjective, pAnimal, pNoun2, adjective2, color, noun, pNoun3, adjective3, verb, pNoun4, verbEd, verb2, noun5, adjective4, adjective5 ) => `Unicorns aren't like other ${pNoun}; they're ${adjective}. They Look like ${pAnimal}, with ${pNoun2} for feet and a ${adjective2} mane of hair. But unicorns are ${color} and have a ${adjective3} ${noun} on their heads. Some ${pNoun3} don't believe unicorns are ${adjective4} but I believe in them. I would love to ${verb} a unicorn to faraway ${pNoun4} One thins i've always ${verbEd} about is wether unicorns ${verb2} rainbows or is their ${noun5} ${adjective5} like any other animal's`,
          inputs: [
-            'pNoun', 'adjective', 'pAnimal', 'pNoun2', 'adjective2', 'color', 'adjective3', 'noun', 'pNoun3', 'adjective', 'verb', 'pNoun4', 'verbEd', 'verb2', 'noun2', 'adjective3'
+            'pNoun', 'adjective', 'pAnimal', 'pNoun2', 'adjective2', 'color', 'adjective3', 'noun', 'pNoun3', 'adjective3', 'verb', 'pNoun4', 'verbEd', 'verb2', 'noun5', 'adjective4', 'adjective5'
+         ],
+         placeholders: [
+         'Plural Noun', 'Adjective', 'Animal Plural', 'Plural Noun ', 'Adjective', 'Color', 'Adjective', 'Noun', 'Plural Noun', 'Verb-ed'
          ]
       },
       {
@@ -19,7 +22,6 @@ $(document).ready(function () {
          ]
       }
    ]
-   // console.log(stories[0].id)
    console.log(stories)
 
 
@@ -27,28 +29,29 @@ $(document).ready(function () {
    $('.arrow').on('click', function(){
       $('.notADeveloper').css('display', 'none')
       $('.section2').append(`<h2>Choose your poison</h2>
-      <label for="unicorn">🦄💩</label>
+      <form class="poisonForm"><label for="unicorn">🦄💩</label>
       <input type="radio" id="unicorn" name="answer" value="unicorn">
       <label for="winter">❄️</label>
       <input type="radio" id="winter" name="answer" value="winter">
-      <button class="buttonSection2" type="submit">Submit</button>`)
+      <button class="buttonSection2" type="submit">Submit</button></form>`)
 
       //get values from radio buttons
-      $("input:radio[name=answer]").click(function () {
-         const value = $(this).val();
-         console.log(value)
-
-
+      $(".poisonForm").on('submit',function (e) {
+         e.preventDefault()
+         const value = $('input[name="answer"]:checked').val()
+         
+         
          //match values with array
          const findStory = stories.filter(function (story) {
             return story['id'] === value;
          })
-            console.log(findStory)
+         
+
          //get from story inputs
          const storyInputs = findStory[0].inputs;
-            console.log(inputs)
-   
-         $(".buttonSection2").on("click", function(){
+         
+         
+         
             //display input options    
             $('.section2').css('display','none')
             storyInputs.forEach(function (input){
@@ -56,40 +59,18 @@ $(document).ready(function () {
                <input class="wordsFromUser" type="text" name="input" id="${input}" placeholder="${input}" required=""><label class="visuallyHidden" for="${input}">${input}</label>`)
             })
             $('.fillWords').append(`<button class="buttonSection3" type="submit">click me</button>`)
-             //grab values from user 
-           
 
-
-
-
-
-
-            const inputFromUser = 
             $('.fillWords').on('submit', function(e){
                e.preventDefault();
-               console.log("clicked")
-               const results = 
-               $("input[name='input']").map(function (res){
-                  const inputResult = $("input[name='input']").val()
-                  return inputResult
-                  
+               $('.section3').css('display', 'none')
+               //grab values from user 
+               const arrayOfInputs = Array.from($("input[name='input']"))
+               const results = arrayOfInputs.map(function (res){
+                  return $(res).val()
                })
-               console.log(results)
-               // var result = $("input[name='uID']")
-               //    .map(function (x, elm) { return elm.value; })
-               //    .get()
-               //    .join(',');
-               
+
+               console.log(findStory[0].completeStory(...results))
             })
-            
-            
-
-            $('.buttonSection2').on('click', function(){
-
-               //display story on submit
-
-            })
-         })
       });
 
       
@@ -104,9 +85,9 @@ $(document).ready(function () {
       // add input to html with jquery append
    })
 
-})
+
 
 
 
 // const id = $(this).attr('id');
-
+});
