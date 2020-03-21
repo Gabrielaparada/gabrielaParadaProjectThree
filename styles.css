@@ -400,40 +400,119 @@ h4{
    }
 }
 
-.section2{
+.poisonForm{
    display:flex;
-   flex-direction: column;
-   background-color: white;
-   width: 30%;
+   /* flex-direction: column; */
    border-radius: 14px;
    justify-content: center;
    align-items: center;
    margin: 0 auto;
+   padding: 22px 0 22px 0;
+
+}
+
+
+.section2{
+   background-color: white;
+   border-radius: 10px;
+   width: 56%;
+   margin:0 auto;
    margin-top: 200px;
 }
+
+.section2 h2{
+   font-family: fun;
+   font-size: 3rem;
+   text-align: center;
+}
+
+.leggoButton{
+   width: 10%;
+   font-size: 2rem;
+   border-radius: 10px;
+   border: none;
+   margin-top:10px
+
+}
 .fillWords{
-   position:relative;
    background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 10px;
+   position:relative;
    width: 80%;
    text-align: center;
    border-radius: 10px;
    margin:0 auto;
    margin-top: 100px;
+   position:relative;
 }
 
 .buttonSection3{
    position:absolute;
    bottom: -66px;
    right: 50%;
-
 }
 
 
 input[type="radio"]{
    vertical-align: middle;
-   margin-top: 0;
+   margin: 0;
    background-color:white;
+   margin-left: 20px;
+   opacity:0;
+   /* visibility: hidden; */
 }
+
+.poisonForm label{
+   margin-left: 10px;
+}
+
+input[type='radio'], .poisonLabel {
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+    margin-left: 20px; /* This will be adjusted */
+}
+
+input[type='radio'] + label::before{
+      content: '';
+      position: absolute;
+      display: inline-block;
+      left: -22px; /* This will be adjusted */
+      bottom:1px;
+      width: 16px;
+      height: 16px;
+      background-color:transparent;
+      border-radius: 50%;  
+      border: 1px solid black;
+      box-shadow: 0 0px 8px #1da81d;
+} 
+
+input[type='radio'] + label::after{
+      content: '';
+      position: absolute;
+      display: inline-block;
+      left: -20px; /* This will be adjusted */
+      bottom:3px;
+      width: 14px;
+      height: 14px;
+      background-color:transparent;
+      border-radius: 50%;
+      /* background-color: red;   */
+   }
+   
+input[type="radio"]:checked + label::after {
+	background: #01c801;
+}
+input[type="radio"]:focus + label::before {
+	box-shadow: 0 0px 5px black;
+}
+   
+
+
+
+
+
+
 
 
 
