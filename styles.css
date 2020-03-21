@@ -71,6 +71,28 @@ input,
    font-size: 1.5rem;
    border-radius: 10px; 
    letter-spacing: 4px;
+   animation: opacity 1s;
+}
+
+/* .playAnchor{
+   animation: leftToRight 3s;
+   color:red
+
+} */
+
+@keyframes leftToRight{
+   100%{
+      right: -5%
+   }
+
+   50%{
+      right:30%
+   }
+
+   0%{
+      right:47%
+   }
+
 }
 
 .play:hover{
@@ -274,7 +296,7 @@ span{
    position:absolute;
    top:-70px;
    left:39%;
-   animation: opacity 2.3s
+   animation: opacity 2s
 
 }
 
