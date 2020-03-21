@@ -105,11 +105,13 @@ input,
    display:flex;
    align-items: center;
    justify-content: center;
-   position:relative
+   position:relative;
+   text-align:center;
+   line-height: 91px;
 }
 
 
-.title-main{
+.titleMain{
    font-family: neon;
    letter-spacing: 10px;
    color:white;
@@ -155,7 +157,7 @@ height: 100%;
    width: 100%;
 }
 
-.title-form{
+.titleForm{
    font-family: neon;
    text-align: center;
    font-size: 3rem;
@@ -218,13 +220,16 @@ input{
    margin-bottom: 17px;
 }
 
+.buttonContainer{
+   text-align: center;
+}
+
 .back{
+   /* position:absolute; */
    border: none;
    padding: 10px;
    border-radius: 10px;
-   margin-top: 23px;
-   margin-left: 106px;
-   width: 61%;
+
    font-size: 1.5rem;
 }
 
@@ -449,6 +454,7 @@ h4{
    align-items: center;
    margin: 0 auto;
    padding: 22px 0 22px 0;
+   flex-wrap: wrap;
 
 }
 
@@ -471,7 +477,6 @@ h4{
    border: none;
    margin-left: 21px;
    padding: 8px 18px 8px 18px;
-   width: 14%;
    border-radius: 10px;
    background-color: black;
    color:white;
@@ -496,7 +501,7 @@ h4{
 }
 
 .leggoButton{
-   width: 14%;
+   /* width: 14%; */
    font-size: 1.8rem;
    border-radius: 10px;
    border: none;
@@ -561,9 +566,10 @@ input[type="radio"]{
    /* visibility: hidden; */
 }
 
-.poisonForm label{
+.poisonLabel{
    margin-left: 10px;
    font-size:1.7rem;
+   margin-bottom:21px;
 }
 
 input[type='radio'], .poisonLabel {
@@ -630,17 +636,164 @@ input[type="radio"]:focus + label::before {
 .again{
    position: absolute;
    bottom: -64px;
-   left: 31%;
+   left: 24%;
    border:none;
    padding: 9px;
    border-radius: 10px;
-   width: 39%;
+   width: 50%;
 }
 
 .again:hover,
 .again:focus{
    background-color: #1da81d;
    color:white;
+}
+
+/*media queries*/
+
+@media (max-width:923px){
+   .play{
+      margin-top: 61px;
+      right:43%;
+   }
+   .footerInner{
+      font-size: 1.2rem;
+      left:0;
+      width:100%
+   }
+
+   .footerInner{
+      right:36%;
+   }
+
+}
+
+@media (max-width:867px){
+   .story{
+      width: 82%;
+   }
+}
+
+@media (max-width: 740px){
+   .giggles{
+      text-align: center;
+   }
+
+   .section2{
+      width: 96%;
+   }
+
+   .buttonSection2{
+      width: 25%;
+   }
+
+.inputDevelopers{
+   width: 73%;
+   right:13%;
+}
+
+   .section4{
+      width: 80%;
+   }
+}
+
+@media (max-width:602px){
+
+   .titleMain{
+      font-size: 4rem;
+   }
+
+   .section2 h2,
+   .section3 h2{
+      font-size:3rem;
+   }
+
+   .fillWords input{
+      width: 80%;
+   }
+
+   .buttonSection3{
+      width: 34%;
+      right:34%;
+   }
+
+   .play{
+      right:40%;
+   }
+
+   .story{
+      margin-top:70px
+   }
+
+}
+
+
+@media (max-width: 500px){
+   .giggles,
+   .leggo {
+      font-size: 3.5rem;
+   }
+
+   .leggoButton{
+      font-size: 1.4rem;
+   }
+
+      .buttonSection2{
+      width: 56%;
+   }
+
+   .titleForm{
+      font-size:2rem;
+   }
+
+      .story{
+      margin-top:45px
+   }
+
+   .sub-heading{
+      font-size: 2rem;
+   }
+}
+
+@media (max-width:444px){
+
+   .titleMain{
+      font-size:3rem;
+      line-height: 57px;
+   }
+   .play{
+      margin-top:14px;
+      right:36%;
+      font-size:1.2rem;
+   }
+
+   .story,
+   .back{
+      font-size:1.2rem;
+   }
+
+
+
+   .section3 h2{
+      font-size:2.3rem
+   }
+
+   .fillWords{
+      margin-top:30px;
+   }
+
+   .again{
+      width: 67%;
+      left:17%;
+   }
+
+   .poisonLabel{
+      bottom: 2px;
+   }
+
+   /* input[type="radio"] + label::after{
+      width: 16px;
+   } */
 }
 
 

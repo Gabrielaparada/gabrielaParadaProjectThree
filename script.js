@@ -29,8 +29,8 @@ $(document).ready(function () {
          With the basics of the CSS <span>${noun}</span> covered, the next CSS topic for you to concentrate on is styling <span>${noun}</span> — one of the most <span>${adjective}</span> things you'll do with CSS. Here we look at <span>${noun}</span> styling fundamentals including setting font, boldness, italics, <span>${noun2}</span>, line and letter spacing, drop shadows, and other text features. We round off the module by looking at <span>${verb}</span> fonts to your page, and styling <span>${noun3}</span> and links.`,
 
          `<h2 class="sub-heading">The THIS keyword</h2>
-         A function's this keyword ${verb} a little differently in JavaScript compared to other ${noun}. It also has some differences between strict mode and non-strict mode.
-         In most cases, the ${noun2} of this is ${adjective} by how a function is called (runtime binding). It can't be set by assignment during ${noun3}, and it may be different each time the function is called`
+         A function's this keyword <span>${verb}</span> a little differently in JavaScript compared to other <span>${noun}.</span> It also has some differences between strict mode and non-strict mode.
+         In most cases, the <span>${noun2}</span> of this is <span>${adjective}</span> by how a function is called (runtime binding). It can't be set by assignment during <span>${noun3}</span>, and it may be different each time the function is called`
       ]
 
       const randomStory = stories[Math.floor(Math.random() * stories.length)]
@@ -40,7 +40,7 @@ $(document).ready(function () {
 
       //display story
       $('.story').append(randomStory)
-      $('.story').append(`<a href="./landingPage.html"><br><button class="back">Take me to the beginning!</button></a>`).addClass("display")
+      $('.story').append(`<div class="buttonContainer"><a href="./landingPage.html"><br><button class="back">Take me to the beginning!</button></a></div>`).addClass("display")
       $('input').val('')
    })
 })
