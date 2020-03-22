@@ -779,6 +779,19 @@ input[type="radio"]:focus + label::before {
 
 @media (max-width:444px){
 
+   .wrapper{
+      height: 80vh;
+   }
+
+   .play{
+      top:50%;
+   }
+
+   /* .neon{
+      justify-content:top;
+      margin-top: 200px;
+   } */
+
    .titleMain{
       font-size:3rem;
       line-height: 57px;
@@ -812,7 +825,7 @@ input[type="radio"]:focus + label::before {
    }
 
    .footerInner{
-      top:-100px;
+      top:0px;
    }
 
    /* input[type="radio"] + label::after{
