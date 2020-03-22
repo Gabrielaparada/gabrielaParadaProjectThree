@@ -787,21 +787,14 @@ input[type="radio"]:focus + label::before {
 
 @media (max-width:444px){
 
-   .wrapper{
+   .wrapper,
+   .notADeveloper{
       height: 80vh;
    }
    .section2{
       width: 73%;
    }
 
-   /* .play{
-      top:50%;
-   } */
-
-   /* .neon{
-      justify-content:top;
-      margin-top: 200px;
-   } */
 
    .titleMain{
       font-size:3rem;
