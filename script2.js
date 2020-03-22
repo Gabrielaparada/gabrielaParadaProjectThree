@@ -96,19 +96,19 @@ $(document).ready(function () {
       <form class="poisonForm">
 
       <input type="radio" id="unicorn" name="answer" value="unicorn">
-      <label class="poisonLabel" for="unicorn">🦄</label>
+      <label class="poisonLabel" for="unicorn">🦄💩</label>
 
       <input type="radio" id="winter" name="answer" value="winter">
-      <label class="poisonLabel"  for="winter">❄️</label>
+      <label class="poisonLabel"  for="winter">❄️🥶</label>
       
       <input type="radio" id="brains" name="answer" value="brains">
-      <label class="poisonLabel" for="brains">🧠</label>
+      <label class="poisonLabel" for="brains">🧠🤔</label>
 
       <input type="radio" id="monster" name="answer" value="monster">
-      <label class="poisonLabel"  for="monster">👹</label>
+      <label class="poisonLabel"  for="monster">👹😨</label>
 
       <input type="radio" id="pizza" name="answer" value="pizza">
-      <label class="poisonLabel"  for="pizza">🍕</label>
+      <label class="poisonLabel"  for="pizza">🍕🍕</label>
 
       <input type="radio" id="favoriteFood" name="answer" value="favoriteFood">
       <label class="poisonLabel" for="favoriteFood">🍽💕</label>
