@@ -701,8 +701,16 @@ input[type="radio"]:focus + label::before {
       text-align: center;
    }
 
-   .section2{
+   /* .section2{
       width: 96%;
+   } */
+
+      .poisonForm{
+      flex-direction:column;
+   }
+
+   .section2{
+      width: 57%;
    }
 
    .buttonSection2{
@@ -782,10 +790,13 @@ input[type="radio"]:focus + label::before {
    .wrapper{
       height: 80vh;
    }
-
-   .play{
-      top:50%;
+   .section2{
+      width: 73%;
    }
+
+   /* .play{
+      top:50%;
+   } */
 
    /* .neon{
       justify-content:top;
@@ -828,9 +839,6 @@ input[type="radio"]:focus + label::before {
       top:0px;
    }
 
-   /* input[type="radio"] + label::after{
-      width: 16px;
-   } */
 }
 
 
