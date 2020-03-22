@@ -826,6 +826,10 @@ input[type="radio"]:focus + label::before {
       font-size:1.2rem;
    }
 
+   .section2{
+      margin-top:49px;
+   }
+
    .section3 h2{
       font-size:2.3rem
    }
@@ -846,6 +850,7 @@ input[type="radio"]:focus + label::before {
    .footerInner{
       top:0px;
    }
+
 }
 
 @media (max-width:355px){
