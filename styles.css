@@ -788,6 +788,10 @@ input[type="radio"]:focus + label::before {
       margin-top: 30px;
    }
 
+   .section4{
+      margin-top:100px;
+   }
+
    .titleForm{
       font-size:2rem;
    }
