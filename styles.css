@@ -701,6 +701,10 @@ input[type="radio"]:focus + label::before {
       text-align: center;
    }
 
+   .notADeveloper{
+      font-size:3.6rem;
+   }
+
    /* .section2{
       width: 96%;
    } */
@@ -761,7 +765,7 @@ input[type="radio"]:focus + label::before {
 @media (max-width: 500px){
    .giggles,
    .leggo {
-      font-size: 3.5rem;
+      font-size: 2.8rem;
    }
 
    .leggoButton{
@@ -790,6 +794,10 @@ input[type="radio"]:focus + label::before {
    .wrapper,
    .notADeveloper{
       height: 80vh;
+   }
+
+   .notADeveloper{
+      margin-top:150px
    }
    .section2{
       width: 73%;
