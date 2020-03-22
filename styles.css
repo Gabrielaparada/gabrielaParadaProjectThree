@@ -794,8 +794,6 @@ input[type="radio"]:focus + label::before {
       font-size:1.2rem;
    }
 
-
-
    .section3 h2{
       font-size:2.3rem
    }
@@ -811,6 +809,10 @@ input[type="radio"]:focus + label::before {
 
    .poisonLabel{
       bottom: 2px;
+   }
+
+   .footerInner{
+      top:-100px;
    }
 
    /* input[type="radio"] + label::after{
