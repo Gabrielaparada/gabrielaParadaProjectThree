@@ -705,16 +705,13 @@ input[type="radio"]:focus + label::before {
       font-size:3.6rem;
    }
 
-   /* .section2{
-      width: 96%;
-   } */
-
-      .poisonForm{
+   .poisonForm{
       flex-direction:column;
    }
 
    .section2{
       width: 57%;
+      margin-top:80px;
    }
 
    .buttonSection2{
