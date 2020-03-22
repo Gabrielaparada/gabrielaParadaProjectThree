@@ -348,7 +348,7 @@ h4{
    font-size: 5rem;
 }
 
-.notADeveloper h1{
+.giggles{
    -webkit-animation-name: lightSpeedIn;
    animation-name: lightSpeedIn;
    -webkit-animation-timing-function: ease-out;
@@ -733,6 +733,11 @@ input[type="radio"]:focus + label::before {
 
 @media (max-width:602px){
 
+   .giggles,
+   .leggo{
+      font-size:3.2rem;
+   }
+
    .titleMain{
       font-size: 4rem;
    }
@@ -763,6 +768,7 @@ input[type="radio"]:focus + label::before {
 
 
 @media (max-width: 500px){
+
    .giggles,
    .leggo {
       font-size: 2.8rem;
@@ -772,7 +778,7 @@ input[type="radio"]:focus + label::before {
       font-size: 1.4rem;
    }
 
-      .buttonSection2{
+   .buttonSection2{
       width: 56%;
    }
 
@@ -796,13 +802,17 @@ input[type="radio"]:focus + label::before {
       height: 80vh;
    }
 
+   .giggles,
+   .leggo{
+      font-size: 2.4rem;
+   }
+
    .notADeveloper{
-      margin-top:150px
+      margin-top:100px
    }
    .section2{
       width: 73%;
    }
-
 
    .titleMain{
       font-size:3rem;
@@ -839,7 +849,13 @@ input[type="radio"]:focus + label::before {
    .footerInner{
       top:0px;
    }
+}
 
+@media (max-width:355px){
+   .leggo,
+   .giggles{
+      font-size:2rem;
+   }
 }
 
 
