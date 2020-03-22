@@ -709,6 +709,10 @@ input[type="radio"]:focus + label::before {
       flex-direction:column;
    }
 
+   .section3 h2{
+      margin-top:50px;
+   }
+
    .section2{
       width: 57%;
       margin-top:80px;
@@ -751,6 +755,7 @@ input[type="radio"]:focus + label::before {
    .buttonSection3{
       width: 34%;
       right:34%;
+      margin:0;
    }
 
    .play{
@@ -777,6 +782,10 @@ input[type="radio"]:focus + label::before {
 
    .buttonSection2{
       width: 56%;
+   }
+
+   .section2 h2{
+      margin-top: 30px;
    }
 
    .titleForm{
