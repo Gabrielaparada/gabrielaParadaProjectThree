@@ -845,7 +845,7 @@ input[type="radio"]:focus + label::before {
       line-height: 57px;
    }
    .play{
-      right: 31%;
+      left: 29%;
       top: 34%;
       font-size:1.2rem;
    }
