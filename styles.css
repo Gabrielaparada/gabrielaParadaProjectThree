@@ -879,11 +879,11 @@ input[type="radio"]:focus + label::before {
    }
 
    .footerInner{
-      top:0px;
+      top:68px;
    }
 
    .wrapper{
-      height: 60vh;
+      height: 70vh;
    }
 
       .section4{
