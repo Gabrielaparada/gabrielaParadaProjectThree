@@ -45,6 +45,10 @@ input,
    font-family: 'Rajdhani', sans-serif
 }
 
+.clickMe p{
+   text-transform: uppercase;
+}
+
 
 .play,
 .fill,
@@ -63,7 +67,9 @@ input,
 .play{
    position: absolute;
    top:60%;
-   right:47%;
+   right:0;
+   left:0;
+   margin:0 auto;
    background-color: #496d89; 
    border: none;
    color: white;
@@ -74,11 +80,6 @@ input,
    animation: opacity 1s;
 }
 
-/* .playAnchor{
-   animation: leftToRight 3s;
-   color:red
-
-} */
 
 @keyframes leftToRight{
    100%{
@@ -295,11 +296,11 @@ span{
    text-align: center;
    position:absolute;
    top:-70px;
-   left:39%;
+   left:0;
+   right:0;
    animation: opacity 2s
 
 }
-
 
 
 h4{
@@ -314,18 +315,18 @@ h4{
 .clickMe{
    color:white;
    text-decoration: none;
-   letter-spacing: 5px;
+   letter-spacing: 1px;
    font-size:1.3rem;
-}
-
-.clickMe:hover{
-   font-size:2rem;
    transition: all 0.5s
 }
 
-.clickMe:focus{
-   background:red
+.clickMe:hover{
+   letter-spacing: 5px;
 }
+/* 
+.clickMe:focus{
+   font-size: 2rem;
+} */
 
 
 
@@ -887,8 +888,7 @@ input[type="radio"]:focus + label::before {
       top:0px;
    }
 
-   .wrapper,
-   .notADeveloper{
+   .wrapper{
       height: 60vh;
    }
 
