@@ -780,9 +780,9 @@ input[type="radio"]:focus + label::before {
       margin:0;
    }
 
-   /* .play{
+   .play{
       right:40%;
-   } */
+   }
 
    .story{
       margin-top:70px
@@ -845,11 +845,11 @@ input[type="radio"]:focus + label::before {
       font-size:3rem;
       line-height: 57px;
    }
-   .play{
-      top:38%;
+   /* .play{
+      top:48%;
       margin-top:14px;
       font-size:1.2rem;
-   }
+   } */
 
    .story,
    .back{
@@ -883,7 +883,7 @@ input[type="radio"]:focus + label::before {
    }
 
    .wrapper{
-      height: 70vh;
+      height: 60vh;
    }
 
       .section4{
