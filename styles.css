@@ -887,6 +887,16 @@ input[type="radio"]:focus + label::before {
       top:0px;
    }
 
+   .wrapper,
+   .notADeveloper{
+      height: 60vh;
+   }
+
+      .section4{
+      margin-top: 50px;
+      transition: all 0.5s;
+   }
+
 }
 
 @media (max-width:355px){
@@ -894,10 +904,6 @@ input[type="radio"]:focus + label::before {
       font-size:2rem;
    }
 
-   .section4{
-      margin-top: 50px;
-      transition: all 0.5s;
-   }
 }
 
 
