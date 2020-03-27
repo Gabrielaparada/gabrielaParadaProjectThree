@@ -834,6 +834,10 @@ input[type="radio"]:focus + label::before {
       height: 80vh;
    }
 
+   .neon{
+      margin-top:32px;
+   }
+
    .giggles{
       font-size: 2.4rem;
    }
@@ -848,7 +852,7 @@ input[type="radio"]:focus + label::before {
    }
    .play{
       left: 29%;
-      top: 34%;
+      top: 38%;
       font-size:1.2rem;
    }
 
@@ -880,7 +884,7 @@ input[type="radio"]:focus + label::before {
    }
 
    .footerInner{
-      top:154px;
+      top:130px;
    }
 
    .wrapper{
