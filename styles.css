@@ -49,6 +49,10 @@ input,
    text-transform: uppercase;
 }
 
+a{
+   text-decoration: none;
+}
+
 
 .play,
 .fill,
@@ -65,20 +69,21 @@ input,
 }
 
 .play{
-   position: absolute;
    top:60%;
+   position:absolute;
    right:0;
    left:0;
    margin:0 auto;
-   background-color: #496d89; 
    border: none;
-   color: white;
    padding: 15px 32px;
    font-size: 1.5rem;
    border-radius: 10px; 
    letter-spacing: 4px;
-   animation: opacity 1s;
+   animation: opacity 1.3s linear;
+   background-color: #496d89; 
+   color: white;
 }
+
 
 
 @keyframes leftToRight{
@@ -95,15 +100,15 @@ input,
    }
 
 }
-
 .play:hover{
-   animation: move 0.2s linear;
+   /* animation: move 0.2s linear; */
    background-color: #042037;
 }
 
 .play:focus{
    background:#042037;
 }
+
 
 
 @keyframes move {
@@ -139,8 +144,6 @@ input,
    letter-spacing: 10px;
    color:white;
    font-size: 5rem;
-   /* transform: translateY(-500%);
-   transition: all 2s; */
    text-shadow:
    #FFF 0px 0px 5px,
    #FFF 0px 0px 5px,
@@ -323,11 +326,10 @@ h4{
 .clickMe:hover{
    letter-spacing: 5px;
 }
-/* 
+
 .clickMe:focus{
    font-size: 2rem;
-} */
-
+}
 
 
 
@@ -407,10 +409,6 @@ h4{
    }
 } 
 
-/* .leggo{
-   color:white;
-   font-size: 5rem;
-} */
 
 .notADeveloper a {
    text-decoration: none;
@@ -530,7 +528,6 @@ h4{
 }
 
 .gigglesButton{
-   /* width: 14%; */
    font-size: 1.8rem;
    border-radius: 10px;
    border: none;
@@ -697,7 +694,7 @@ input[type="radio"]:focus + label::before {
 @media (max-width:923px){
    .play{
       margin-top: 61px;
-      right:43%;
+
    }
    .footerInner{
       font-size: 1.2rem;
@@ -783,9 +780,9 @@ input[type="radio"]:focus + label::before {
       margin:0;
    }
 
-   .play{
+   /* .play{
       right:40%;
-   }
+   } */
 
    .story{
       margin-top:70px
@@ -843,17 +840,14 @@ input[type="radio"]:focus + label::before {
    .notADeveloper{
       margin-top:100px
    }
-   /* .section2{
-      width: 73%;
-   } */
 
    .titleMain{
       font-size:3rem;
       line-height: 57px;
    }
    .play{
+      top:38%;
       margin-top:14px;
-      right:36%;
       font-size:1.2rem;
    }
 
