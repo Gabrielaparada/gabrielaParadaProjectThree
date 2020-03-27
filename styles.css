@@ -37,7 +37,7 @@ input,
 .story,
 .back,
 .clickMe,
-.leggoButton,
+.gigglesButton,
 .buttonSection2,
 .buttonSection3,
 .clickMe p,
@@ -339,7 +339,7 @@ h4{
 }
 .notADeveloper{
    color:white;
-      width: 100vw;
+   width: 100vw;
    height: 100vh;
    display:flex;
    align-items: center;
@@ -406,10 +406,10 @@ h4{
    }
 } 
 
-.leggo{
+/* .leggo{
    color:white;
    font-size: 5rem;
-}
+} */
 
 .notADeveloper a {
    text-decoration: none;
@@ -474,9 +474,9 @@ h4{
    border-radius: 14px;
    justify-content: center;
    align-items: center;
-   margin: 0 auto;
-   padding: 22px 0 22px 0;
-   flex-wrap: wrap;
+   margin: 0 auto; 
+   padding: 22px 0 20px 0;
+   flex-direction: column;
 
 }
 
@@ -484,15 +484,17 @@ h4{
 .section2{
    background-color: white;
    border-radius: 10px;
-   width: 62%;
+   width: 30%;
    margin:0 auto;
-   margin-top: 200px;
+   margin-top: 60px;
 }
 
 .section2 h2{
    font-size: 3rem;
    text-align: center;
 }
+
+
 
 .buttonSection2,
 .buttonSection3{
@@ -505,8 +507,12 @@ h4{
    margin-right: 16px;
 }
 
+.buttonSection2{
+   margin:0 auto;
+}
+
 .buttonSection2:hover,
-.leggoButton:hover{
+.gigglesButton:hover{
    color:black;
    background-color:#1da81d;
    border-radius: 15px;
@@ -518,11 +524,11 @@ h4{
 
 }
 
-.leggoButton:hover{
+.gigglesButton:hover{
    background-color:white
 }
 
-.leggoButton{
+.gigglesButton{
    /* width: 14%; */
    font-size: 1.8rem;
    border-radius: 10px;
@@ -531,12 +537,12 @@ h4{
    padding:10px 8px 10px 9px;
    letter-spacing: 2px;
    font-weight: bold;
-   animation: opacity 2.9s;
+   animation: opacity 1.7s;
    background-color: #1da81d;
    color:white;
 }
 
-.leggoButton:focus{
+.gigglesButton:focus{
    border:1px white solid;
 }
 .fillWords{
@@ -561,7 +567,7 @@ h4{
 .buttonSection3{
    position:absolute;
    bottom: -66px;
-   right: 43%;
+   right: 48%;
    background-color:#1da81d;
    font-size: 1.2rem;
    letter-spacing: 2px;
@@ -583,7 +589,8 @@ input[type="radio"]{
    vertical-align: middle;
    margin: 0;
    background-color:white;
-   margin-left: 20px;
+   margin-left: 5px;
+   margin-right: 10px;
    opacity:0;
    /* visibility: hidden; */
 }
@@ -600,6 +607,10 @@ input[type='radio'], .poisonLabel {
    cursor: pointer;
     margin-left: 20px; /* This will be adjusted */
 }
+/* 
+.greenRadio{
+   margin-left:21px;
+} */
 
 input[type='radio'] + label::before{
       content: '';
@@ -619,23 +630,30 @@ input[type='radio'] + label::after{
       content: '';
       position: absolute;
       display: inline-block;
-      left: -26px; /* This will be adjusted */
+      left: -25px; /* This will be adjusted */
       bottom:8px;
-      width: 17px;
-      height: 17px;
+      width: 34px;
+      height: 22px;
       background-color:transparent;
       border-radius: 50%;
       /* background-color: red;   */
-   }
-   
+}
+
+
 input[type="radio"]:checked + label::after {
-	background: rgba(1, 200, 1, 0.5);
+   /* background: rgba(1, 200, 1, 0.5); */
+   background-image: url(./check-solid.svg);
+   background-repeat: no-repeat;
 }
 input[type="radio"]:focus + label::before {
 	box-shadow: 0 0px 5px black;
 }
 
 /*section4*/
+
+.green{
+   color:#1da81d;
+}
 
 .section4{
    position: relative;
@@ -671,6 +689,8 @@ input[type="radio"]:focus + label::before {
    color:white;
 }
 
+
+
 /*media queries*/
 
 @media (max-width:923px){
@@ -686,6 +706,12 @@ input[type="radio"]:focus + label::before {
 
    .footerInner{
       right:36%;
+   }
+
+   .section2{
+      width:45%;
+      margin-top:85px;
+      transition: all 0.5s;
    }
 
 }
@@ -705,21 +731,8 @@ input[type="radio"]:focus + label::before {
       font-size:3.6rem;
    }
 
-   .poisonForm{
-      flex-direction:column;
-   }
-
    .section3 h2{
       margin-top:50px;
-   }
-
-   .section2{
-      width: 57%;
-      margin-top:80px;
-   }
-
-   .buttonSection2{
-      width: 25%;
    }
 
 .inputDevelopers{
@@ -729,14 +742,18 @@ input[type="radio"]:focus + label::before {
 
    .section4{
       width: 80%;
+      transition: all 0.5s;
    }
 }
 
 @media (max-width:602px){
 
-   .giggles,
-   .leggo{
+   .giggles{
       font-size:3.2rem;
+   }
+
+   .gigglesButton{
+      font-size:1.4rem;
    }
 
    .titleMain{
@@ -748,8 +765,15 @@ input[type="radio"]:focus + label::before {
       font-size:3rem;
    }
 
+   .section2{
+      margin-top:67px;
+      width: 65%;
+      transition: all 0.5s;
+   }
+
    .fillWords input{
       width: 80%;
+      transition: all 0.5s;
    }
 
    .buttonSection3{
@@ -771,12 +795,11 @@ input[type="radio"]:focus + label::before {
 
 @media (max-width: 500px){
 
-   .giggles,
-   .leggo {
+   .giggles{
       font-size: 2.8rem;
    }
 
-   .leggoButton{
+   .gigglesButton{
       font-size: 1.4rem;
    }
 
@@ -789,7 +812,7 @@ input[type="radio"]:focus + label::before {
    }
 
    .section4{
-      margin-top:100px;
+      transition: all 0.5s;
    }
 
    .titleForm{
@@ -812,17 +835,16 @@ input[type="radio"]:focus + label::before {
       height: 80vh;
    }
 
-   .giggles,
-   .leggo{
+   .giggles{
       font-size: 2.4rem;
    }
 
    .notADeveloper{
       margin-top:100px
    }
-   .section2{
+   /* .section2{
       width: 73%;
-   }
+   } */
 
    .titleMain{
       font-size:3rem;
@@ -849,6 +871,7 @@ input[type="radio"]:focus + label::before {
 
    .fillWords{
       margin-top:30px;
+      transition: all 0.5s;
    }
 
    .again{
@@ -867,9 +890,13 @@ input[type="radio"]:focus + label::before {
 }
 
 @media (max-width:355px){
-   .leggo,
    .giggles{
       font-size:2rem;
+   }
+
+   .section4{
+      margin-top: 110px;
+      transition: all 0.5s;
    }
 }
 

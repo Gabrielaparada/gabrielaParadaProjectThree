@@ -10,7 +10,6 @@ $(document).ready(function () {
       const noun2 = $('#anotherNoun').val()
       const noun3 = $('#yetAnotherNoun').val()
       const verb = $('#verb').val()
-      // console.log(value, value2, value3)
 
       const stories = [
          `<h2 class="sub-heading">JavaScript</h2>
@@ -47,17 +46,4 @@ $(document).ready(function () {
 
 
 
-
-
-// $(document).ready(function () {
-//    $(".button").click(function () {
-//       const value1 = $("#name1").val();
-//       alert(value1)
-//       const value2 = $("#name2").val();
-//       alert(value2)
-//       const value3 = $("#name3").val();
-//       alert(value3)
-//    });
-
-// });
 
