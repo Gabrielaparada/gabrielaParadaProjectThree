@@ -485,7 +485,7 @@ h4{
    width: 30%;
    margin:0 auto;
    margin-top: 25px;
-   margin-bottom:20px;
+   /* margin-bottom:20px; */
 }
 
 .section2 h2{
@@ -858,7 +858,7 @@ input[type="radio"]:focus + label::before {
    }
 
    .section2{
-      margin-top:49px;
+      margin-top:15px;
    }
 
    .section3 h2{
