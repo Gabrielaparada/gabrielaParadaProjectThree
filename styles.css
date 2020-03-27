@@ -71,8 +71,7 @@ a{
 .play{
    top:60%;
    position:absolute;
-   right:0;
-   left:0;
+   left:43%;
    margin:0 auto;
    border: none;
    padding: 15px 32px;
@@ -691,9 +690,10 @@ input[type="radio"]:focus + label::before {
 
 /*media queries*/
 
-@media (max-width:923px){
+@media (max-width:922px){
    .play{
       margin-top: 61px;
+      left: 39%;
 
    }
    .footerInner{
@@ -781,9 +781,8 @@ input[type="radio"]:focus + label::before {
    }
 
    .play{
-      right:40%;
+      left:35%
    }
-
    .story{
       margin-top:70px
    }
@@ -846,9 +845,8 @@ input[type="radio"]:focus + label::before {
       line-height: 57px;
    }
    .play{
-      right:38%;
-      top:48%;
-      margin-top:14px;
+      right: 31%;
+      top: 34%;
       font-size:1.2rem;
    }
 
