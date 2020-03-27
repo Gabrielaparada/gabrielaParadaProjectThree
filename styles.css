@@ -845,11 +845,12 @@ input[type="radio"]:focus + label::before {
       font-size:3rem;
       line-height: 57px;
    }
-   /* .play{
+   .play{
+      right:38%;
       top:48%;
       margin-top:14px;
       font-size:1.2rem;
-   } */
+   }
 
    .story,
    .back{
