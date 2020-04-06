@@ -85,8 +85,6 @@ $(document).ready(function () {
       },
       
    ]
-   console.log(stories)
-
 
 //dynamically add radio buttons   
    $('.gigglesButton').on('click', function(){
@@ -119,7 +117,7 @@ $(document).ready(function () {
       <input class="greenRadio" type="radio" id="callInSick" name="answer" value="callInSick">
       <label class="poisonLabel greenRadio" for="callInSick">📞🤒</label>
 
-      <button class="buttonSection2" type="submit">Submit</button>
+      <button class="buttonSection2 fontFamilyText" type="submit">Submit</button>
       </form>`)
       
 
@@ -148,7 +146,7 @@ $(document).ready(function () {
                $('.fillWords').append(`
                <input class="wordsFromUser" type="text" name="input" id="${input}" placeholder="${input}" required=""><label class="visuallyHidden" for="${input}">${input}</label>`)
             })
-            $('.fillWords').append(`<button class="buttonSection3" type="submit">Next</button>`)
+         $('.fillWords').append(`<button class="buttonSection3 fontFamilyText" type="submit">Next</button>`)
 
             $('.fillWords').on('submit', function(e){
                e.preventDefault();
@@ -159,8 +157,9 @@ $(document).ready(function () {
                   return $(res).val()
                })
 
+               //display story
                $('.section4').removeClass('hidden')
-               $('.section4').append(`<a href="notAdeveloper.html"><button class="again">Let's do it again!</button></a>`)
+               $('.section4').append(`<button onclick="window.location.href='./notADeveloper.html'" class="again fontFamilyText">Let's do it again!</button>`)
                $('.section4 h3').html((findStory[0].title))
                $('.section4 p').html(findStory[0].completeStory(...results))
                
@@ -171,12 +170,7 @@ $(document).ready(function () {
    })
 })
 
-   // select story
 
 
 
-
-
-
-// const id = $(this).attr('id');
 
