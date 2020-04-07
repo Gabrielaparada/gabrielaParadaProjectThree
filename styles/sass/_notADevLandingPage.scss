@@ -17,3 +17,24 @@
   color: white;
   animation: bounce 2.5s ease-in-out, opacity 1.5s;
 }
+
+.gigglesButton:hover {
+  background-color: white;
+}
+
+.gigglesButton {
+  font-size: 1.8rem;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 8px 10px 9px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  animation: opacity 1.7s;
+  background-color: #1da81d;
+  color: white;
+}
+
+.gigglesButton:focus {
+  border: 1px white solid;
+}
