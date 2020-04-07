@@ -341,22 +341,18 @@ textarea {
 @-webkit-keyframes slideDown {
   from {
     margin-top: -100%;
-    height: 300%;
   }
   to {
-    margin-top: 50%;
-    height: 100%;
+    margin-top: 10%;
   }
 }
 
 @keyframes slideDown {
   from {
     margin-top: -100%;
-    height: 300%;
   }
   to {
-    margin-top: 50%;
-    height: 100%;
+    margin-top: 10%;
   }
 }
 
@@ -645,6 +641,10 @@ textarea {
   height: 97vh;
 }
 
+body {
+  height: 100vh;
+}
+
 @font-face {
   font-family: fun;
   src: url(../assets/chary___.ttf);
@@ -678,10 +678,6 @@ a {
 }
 
 .play {
-  top: 60%;
-  position: absolute;
-  left: 43%;
-  margin: 0 auto;
   border: none;
   padding: 15px 32px;
   font-size: 1.5rem;
@@ -691,20 +687,10 @@ a {
           animation: opacity 1.3s linear;
   background-color: #496d89;
   color: white;
+  margin-top: 23px;
 }
 
 .neon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  text-align: center;
   line-height: 91px;
 }
 
@@ -717,7 +703,8 @@ a {
   text-shadow: #fff 0px 0px 5px, #fff 0px 0px 5px, #fff 0px 0px 5px, #718ea4 0px 0px 20px, #718ea4 0px 0px 20px, #718ea4 0px 0px 30px, #718ea4 0px 0px 40px;
   -webkit-animation: flicker 0.9s cubic-bezier(0.19, 1, 0.22, 1) infinite, slideDown 0.7s ease-out;
           animation: flicker 0.9s cubic-bezier(0.19, 1, 0.22, 1) infinite, slideDown 0.7s ease-out;
-  margin-top: 0%;
+  text-align: center;
+  padding-top: 200px;
 }
 
 /*------landing page bottom part------*/
@@ -725,14 +712,25 @@ a {
   position: relative;
 }
 
+.notADevInner h4 {
+  top: 64px;
+}
+
 .notADevInner {
   text-align: center;
   position: absolute;
-  top: -70px;
+  top: 90px;
   left: 0;
   right: 0;
   -webkit-animation: opacity 2s;
           animation: opacity 2s;
+}
+
+.clickMe,
+.notADevInner h4 {
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .clickMe {
@@ -742,6 +740,8 @@ a {
   font-size: 1.3rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  display: block;
+  top: 101px;
 }
 
 .clickMe:hover {
@@ -753,11 +753,6 @@ a {
 }
 
 /*------footer------*/
-.footerText {
-  color: rgba(255, 255, 255, 0.3);
-  text-align: center;
-}
-
 .questions {
   position: relative;
   width: 100%;
@@ -1165,6 +1160,7 @@ input[type="radio"]:focus + label::before {
   }
   .notADevInner {
     right: 36%;
+    top: -35px;
   }
   .section2 {
     width: 45%;
@@ -1268,12 +1264,8 @@ input[type="radio"]:focus + label::before {
 }
 
 @media (max-width: 444px) {
-  .wrapper,
-  .notADeveloper {
-    height: 80vh;
-  }
-  .neon {
-    margin-top: 32px;
+  .notADevInner {
+    top: 28px;
   }
   .giggles {
     font-size: 2.4rem;
@@ -1312,9 +1304,6 @@ input[type="radio"]:focus + label::before {
   .poisonLabel {
     bottom: 2px;
   }
-  .notADevInner {
-    top: 100px;
-  }
   .wrapper {
     height: 60vh;
   }
@@ -1322,10 +1311,6 @@ input[type="radio"]:focus + label::before {
     margin-top: 50px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-  }
-  .footerText {
-    position: relative;
-    top: 168px;
   }
 }
 

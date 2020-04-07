@@ -13,6 +13,7 @@
 
   .notADevInner {
     right: 36%;
+    top: -35px;
   }
 
   .section2 {
@@ -130,13 +131,8 @@
 }
 
 @media (max-width: 444px) {
-  .wrapper,
-  .notADeveloper {
-    height: 80vh;
-  }
-
-  .neon {
-    margin-top: 32px;
+  .notADevInner {
+    top: 28px;
   }
 
   .giggles {
@@ -184,10 +180,6 @@
     bottom: 2px;
   }
 
-  .notADevInner {
-    top: 100px;
-  }
-
   .wrapper {
     height: 60vh;
   }
@@ -195,11 +187,6 @@
   .section4 {
     margin-top: 50px;
     transition: all 0.5s;
-  }
-
-  .footerText {
-    position: relative;
-    top: 168px;
   }
 }
 
