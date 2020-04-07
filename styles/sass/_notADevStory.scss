@@ -1,0 +1,37 @@
+.green {
+  color: #1da81d;
+}
+
+.section4 {
+  position: relative;
+  background: white;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 180px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  line-height: 31px;
+}
+
+.section4Header {
+  font-size: 2.3rem;
+  margin-bottom: 25px;
+}
+
+.again {
+  position: absolute;
+  bottom: -64px;
+  left: 24%;
+  border: none;
+  padding: 9px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.again:hover,
+.again:focus {
+  background-color: #1da81d;
+  color: white;
+}

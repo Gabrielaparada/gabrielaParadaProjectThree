@@ -1,0 +1,71 @@
+.poisonForm {
+  display: flex;
+  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 22px 0 20px 0;
+  flex-direction: column;
+}
+
+.section2 {
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 25px;
+  /* margin-bottom:20px; */
+}
+
+.section2 h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.buttonSection2,
+.buttonSection3 {
+  border: none;
+  margin-left: 21px;
+  padding: 8px 18px 8px 18px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  margin-right: 16px;
+}
+
+.buttonSection2 {
+  margin: 0 auto;
+}
+
+.buttonSection2:hover,
+.gigglesButton:hover {
+  color: black;
+  background-color: #1da81d;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.buttonSection2:focus {
+  border: 1px solid #1da81d;
+}
+
+.gigglesButton:hover {
+  background-color: white;
+}
+
+.gigglesButton {
+  font-size: 1.8rem;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 8px 10px 9px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  animation: opacity 1.7s;
+  background-color: #1da81d;
+  color: white;
+}
+
+.gigglesButton:focus {
+  border: 1px white solid;
+}

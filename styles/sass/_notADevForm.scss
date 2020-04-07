@@ -1,0 +1,98 @@
+.fillWords {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  position: relative;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: 71px;
+}
+
+.section3 h2 {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 4rem;
+}
+
+.buttonSection3 {
+  position: absolute;
+  bottom: -54px;
+  right: 48%;
+  background-color: #1da81d;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.buttonSection3:hover {
+  background: white;
+  color: black;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.buttonSection3:focus {
+  border: white 2px solid;
+}
+
+input[type="radio"] {
+  vertical-align: middle;
+  margin: 0;
+  background-color: white;
+  margin-left: 5px;
+  margin-right: 10px;
+  opacity: 0;
+  /* visibility: hidden; */
+}
+
+.poisonLabel {
+  margin-left: 10px;
+  font-size: 1.7rem;
+  margin-bottom: 21px;
+}
+
+input[type="radio"],
+.poisonLabel {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 20px; /* This will be adjusted */
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: -27px; /* This will be adjusted */
+  bottom: 7px;
+  width: 19px;
+  height: 19px;
+  background-color: transparent;
+  border-radius: 50%;
+  /* border: .5px solid black; */
+  box-shadow: 0 0px 4px #1da81d;
+}
+
+input[type="radio"] + label::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: -25px; /* This will be adjusted */
+  bottom: 8px;
+  width: 34px;
+  height: 22px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label::after {
+  /* background: rgba(1, 200, 1, 0.5); */
+  background-image: url(../assets/check-solid.svg);
+  background-repeat: no-repeat;
+}
+input[type="radio"]:focus + label::before {
+  box-shadow: 0 0px 5px black;
+}

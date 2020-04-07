@@ -1,0 +1,55 @@
+.story {
+  display: none;
+  background-color: rgba(73, 109, 137, 0.7);
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 30px;
+  color: white;
+  line-height: 31px;
+  font-size: 1.4rem;
+}
+
+.display {
+  display: block;
+}
+
+.subHeading {
+  font-size: 2.4rem;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+.back {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+
+  font-size: 1.5rem;
+}
+
+.back:hover,
+.back:focus {
+  background-color: #042037;
+  color: white;
+}
+
+span {
+  text-decoration: underline;
+  color: black;
+}
+
+h4 {
+  text-align: center;
+  font-family: neon;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 6px;
+  margin-bottom: 10px;
+}

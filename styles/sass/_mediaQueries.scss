@@ -1,0 +1,210 @@
+/*media queries*/
+
+@media (max-width: 922px) {
+  .play {
+    margin-top: 61px;
+    left: 39%;
+  }
+  .notADevInner {
+    font-size: 1.2rem;
+    left: 0;
+    width: 100%;
+  }
+
+  .notADevInner {
+    right: 36%;
+  }
+
+  .section2 {
+    width: 45%;
+    /* margin-top:40px; */
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 867px) {
+  .story {
+    width: 82%;
+  }
+}
+
+@media (max-width: 740px) {
+  .giggles {
+    text-align: center;
+  }
+
+  .notADeveloper {
+    font-size: 3.6rem;
+  }
+
+  .section3 h2 {
+    margin-top: 50px;
+  }
+
+  .inputDevelopers {
+    width: 73%;
+    right: 13%;
+  }
+
+  .section4 {
+    width: 80%;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 602px) {
+  .giggles {
+    font-size: 3.2rem;
+  }
+
+  .gigglesButton {
+    font-size: 1.4rem;
+  }
+
+  .titleMain {
+    font-size: 4rem;
+  }
+
+  .section2 h2,
+  .section3 h2 {
+    font-size: 3rem;
+  }
+
+  .section2 {
+    margin-top: 35px;
+    width: 65%;
+    transition: all 0.5s;
+  }
+
+  .fillWords input {
+    width: 80%;
+    transition: all 0.5s;
+  }
+
+  .buttonSection3 {
+    width: 34%;
+    right: 34%;
+    margin: 0;
+  }
+
+  .play {
+    left: 35%;
+  }
+  .story {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  .giggles {
+    font-size: 2.8rem;
+  }
+
+  .gigglesButton {
+    font-size: 1.4rem;
+  }
+
+  .buttonSection2 {
+    width: 56%;
+  }
+
+  .section2 h2 {
+    margin-top: 30px;
+  }
+
+  .section4 {
+    transition: all 0.5s;
+  }
+
+  .titleForm {
+    font-size: 2rem;
+  }
+
+  .story {
+    margin-top: 45px;
+  }
+
+  .subHeading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 444px) {
+  .wrapper,
+  .notADeveloper {
+    height: 80vh;
+  }
+
+  .neon {
+    margin-top: 32px;
+  }
+
+  .giggles {
+    font-size: 2.4rem;
+  }
+
+  .notADeveloper {
+    margin-top: 60px;
+  }
+
+  .titleMain {
+    font-size: 3rem;
+    line-height: 57px;
+  }
+  .play {
+    left: 29%;
+    top: 38%;
+    font-size: 1.2rem;
+  }
+
+  .story,
+  .back {
+    font-size: 1.2rem;
+  }
+
+  .section2 {
+    margin-top: 15px;
+  }
+
+  .section3 h2 {
+    font-size: 2.3rem;
+  }
+
+  .fillWords {
+    margin-top: 30px;
+    transition: all 0.5s;
+  }
+
+  .again {
+    width: 67%;
+    left: 17%;
+  }
+
+  .poisonLabel {
+    bottom: 2px;
+  }
+
+  .notADevInner {
+    top: 100px;
+  }
+
+  .wrapper {
+    height: 60vh;
+  }
+
+  .section4 {
+    margin-top: 50px;
+    transition: all 0.5s;
+  }
+
+  .footerText {
+    position: relative;
+    top: 168px;
+  }
+}
+
+@media (max-width: 355px) {
+  .giggles {
+    font-size: 2rem;
+  }
+}

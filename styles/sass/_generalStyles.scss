@@ -1,0 +1,36 @@
+/*general styling*/
+
+.hidden {
+  display: none;
+}
+.wrapper {
+  width: 100vw;
+  height: 97vh;
+}
+
+@font-face {
+  font-family: fun;
+  src: url(../assets/chary___.ttf);
+}
+
+@font-face {
+  font-family: neon;
+  src: url(../assets/marqueeMoon.ttf);
+}
+
+.fontFamilyText,
+input {
+  font-family: "Rajdhani", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fontFamilyDev {
+  font-family: "Righteous";
+}
+
+.fontFamilyNotADev {
+  font-family: fun;
+}
