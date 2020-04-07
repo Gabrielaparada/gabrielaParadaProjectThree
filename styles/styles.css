@@ -1323,9 +1323,6 @@ input[type="radio"]:focus + label::before {
   .poisonLabel {
     bottom: 2px;
   }
-  .wrapper {
-    height: 60vh;
-  }
   .section4 {
     margin-top: 50px;
     -webkit-transition: all 0.5s;
