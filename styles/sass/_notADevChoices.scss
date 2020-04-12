@@ -48,24 +48,3 @@
 .buttonSection2:focus {
   border: 1px solid #1da81d;
 }
-
-.gigglesButton:hover {
-  background-color: white;
-}
-
-.gigglesButton {
-  font-size: 1.8rem;
-  border-radius: 10px;
-  border: none;
-  margin-top: 10px;
-  padding: 10px 8px 10px 9px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  animation: opacity 1.7s;
-  background-color: #1da81d;
-  color: white;
-}
-
-.gigglesButton:focus {
-  border: 1px white solid;
-}

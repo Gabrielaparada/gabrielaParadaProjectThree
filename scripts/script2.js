@@ -49,10 +49,8 @@ $(document).ready(function () {
             inputs: [
                'Adjective', 'Nationality', 'Person', 'Noun', 'Adjective',
                'Noun', 'Adjective', 'Adjective', 'Plural Noun', 'Noun', 'Food', 'Food', 'Number'
-
          ]
       },
-
          {
             id: 'favoriteFood',
             title: 'Favorite Food',
@@ -86,7 +84,7 @@ $(document).ready(function () {
       
    ]
 
-//dynamically add radio buttons   
+//dynamically add radio buttons to the page  
    $('.gigglesButton').on('click', function(){
       $('.notADeveloper').css('display', 'none')
       $('.section2').removeClass('hidden')
@@ -121,52 +119,51 @@ $(document).ready(function () {
       </form>`)
       
 
-      //get values from radio buttons
-      $(".poisonForm").on('submit',function (e) {
-         console.log("button click")
-         e.preventDefault()
-         const value = $('input[name="answer"]:checked').val()
-         console.log(value)
-         
-         //match values with array
-         const findStory = stories.filter(function (story) {
-            return story['id'] === value;
-         })
-         
-
-         //get from story inputs
-         const storyInputs = findStory[0].inputs;
-
-
-            //display input options    
-            $('.section2').css('display','none')
-            $('.section3').removeClass('hidden')
-            $('.section3 h2').append(`Fill the spaces below`)
-            storyInputs.forEach(function (input){
-               $('.fillWords').append(`
-               <input class="wordsFromUser" type="text" name="input" id="${input}" placeholder="${input}" required=""><label class="visuallyHidden" for="${input}">${input}</label>`)
-            })
-         $('.fillWords').append(`<button class="buttonSection3 fontFamilyText" type="submit">Next</button>`)
-
-            $('.fillWords').on('submit', function(e){
-               e.preventDefault();
-               $('.section3').css('display', 'none')
-               //grab values from user 
-               const arrayOfInputs = Array.from($("input[name='input']"))
-               const results = arrayOfInputs.map(function (res){
-                  return $(res).val()
-               })
-
-               //display story
-               $('.section4').removeClass('hidden')
-               $('.section4').append(`<button onclick="window.location.href='./notADeveloper.html'" class="again fontFamilyText">Let's do it again!</button>`)
-               $('.section4 h3').html((findStory[0].title))
-               $('.section4 p').html(findStory[0].completeStory(...results))
-               
-            })
-      });
-
+   //get values from radio buttons
+   $(".poisonForm").on('submit',function (e) {
+      e.preventDefault()
+      const value = $('input[name="answer"]:checked').val()
       
+      //match values with array
+      const findStory = stories.filter(function (story) {
+         return story['id'] === value;
+      })
+      
+
+      //get from story inputs
+      const storyInputs = findStory[0].inputs;
+
+      //display/add input options    
+      $('.section2').css('display','none')
+      $('.section3').removeClass('hidden')
+      $('.section3 h2').append(`Fill the spaces below`)
+      storyInputs.forEach(function (input){
+         $('.fillWords').append(`
+         <input class="wordsFromUser" 
+         type="text" name="input" id="${input}" placeholder="${input}" required=""><label class="visuallyHidden" for="${input}">${input}</label>`)
+      })
+      $('.fillWords').append(`<button class="buttonSection3 fontFamilyText" type="submit">Next</button>`)
+
+      $('.fillWords').on('submit', function(e){
+         e.preventDefault();
+         $('.section3').css('display', 'none')
+
+         //grab values from user 
+         const arrayOfInputs = Array.from($("input[name='input']"))
+         const results = arrayOfInputs.map(function (res){
+            return $(res).val()
+         })
+
+         //display story
+         $('.section4').removeClass('hidden')
+         $('.section4').append(`<button onclick="window.location.href='./notADeveloper.html'" class="again fontFamilyText">
+            Let's do it again!
+         </button>`)
+         $('.section4 h3').html((findStory[0].title))
+         $('.section4 p').html(findStory[0].completeStory(...results))
+         
+      })
+      });
    })
 })
 
