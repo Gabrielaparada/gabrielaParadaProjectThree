@@ -1,4 +1,4 @@
-
+//Non developer site
 $(document).ready(function () {
    const stories = [
       {
@@ -12,7 +12,7 @@ $(document).ready(function () {
       },
       {
          id: "winter",
-         title: "Fun facts about winter",
+         title: "Fun facts about winter🙅🏻‍♀️",
          completeStory: (number, noun3, adjective2, noun4, verbIng, verbIng2, verbIng3, beverage, food) =>
             `Winter is one of <span class="green">${number}</span> seasons of the year. Winter is the time of the year when the <span class="green">${noun3}</span> is furthest from the earth. The weather tends to be <span class="green">${adjective2}</span> in winter, with <span class="green">${noun4}</span> fall and cold temperatures. Some winter sports include <span class="green">${verbIng}</span>, <span class="green">${verbIng2}</span>, and <span class="green">${verbIng3}</span>. Hot <span class="green">${beverage}</span> with <span class="green">${food}</span> on top is a popular drink.`,
          inputs: [
@@ -21,7 +21,7 @@ $(document).ready(function () {
       },
       {
          id:'brains',
-         title:'Braaaaaiiiins',
+         title:'Braaaaaiiiins👀',
          completeStory: (adjective, noun, bodyPart, verb, verb2, pNoun, bodyPart2, adjective2, verb4, adverb3, adjective3) => 
             `The brain is <span class="green">${adjective}</span> part of the human <span class="green">${noun}</span> located in the <span class="green">${bodyPart}.</span> The brain is like a <span class="green">${adjective}</span> computer that <span class="green">${verb}</span> the body. People use their brains to <span class="green">${verb}</span> and <span class="green">${verb2},</span> and all human <span class="green">${pNoun}</span> are controlled by the <span class="green">${bodyPart2}</span>.
             <span class="green">${adjective2}</span> Fact: Zombies like to <span class="green">${verb4}</span> brains, which is <span class="green">${adverb3}</span> <span class="green">${adjective3}</span>!`,
@@ -53,17 +53,17 @@ $(document).ready(function () {
       },
          {
             id: 'favoriteFood',
-            title: 'Favorite Food',
+            title: 'Favorite Food👅',
             completeStory: (food, noun, verb, noun2, food2, place, adjective, place2, adjective2, person, noun3, animal) =>
-            `At night I dream of <span>${food}</span> that is as big as a <span>${noun}</span> When I try to take a bite, it <span>${verb}</span> on my <span>${noun2}</span> 
-            The best time I ever ate <span>${food2}</span> was at the <span>${place}</span> It tasted <span>${adjective}</span>.But don't ever buy it at <span>${place2}</span> though, it is most <span>${adjective2}</span>. <span>${person}</span> likes it best with <span>${noun3}</span> Be sure to give the leftovers to your <span>${animal}</span>`,
+            `At night I dream of <span class="green">${food}</span> that is as big as a <span class="green">${noun}</span> When I try to take a bite, it <span class="green">${verb}</span> on my <span>${noun2}</span> 
+            The best time I ever ate <span>${food2}</span> was at the <span class="green">${place}</span> It tasted <span class="green">${adjective}</span>.But don't ever buy it at <span>${place2}</span> though, it is most <span class="green">${adjective2}</span>. <span class="green">${person}</span> likes it best with <span class="green">${noun3}</span> Be sure to give the leftovers to your <span class="green">${animal}</span>`,
             inputs: [
                'Food', 'Noun', 'Verb', 'Noun', 'Food','Place','Adjective','Place', 'Place', 'Adjective', 'Person','Noun', 'Animal'
             ]
          },
          {
             id: 'bunny',
-            title: 'Funny Bunny',
+            title: 'Funny Bunny🤡',
             completeStory: (place, verb, animal, exercise, noun, partOfFace, adjective, vegetable, activity, verb2, verb3, noun3) =>
             `I am writing this email to inform you that something funny happened at <span class="green">${place}</span> today. When I was <span class="green">${verb}</span> the trash out, I stumbled upon a <span class="green">${animal}</span> doing push ups and <span class="green">${exercise}</span>. This <span class="green">${noun}</span> was dressed on a bunny costumer. It had a large <span class="green">${partOfFace}</span> and a cute <span class="green">${adjective}</span> tail. I asked this <span class="green">${vegetable}</span> head what it was doing by the trash cans? He replied, "I am training for the Easter Day <span class="green">${activity}</span> Rabbits always win, so I thought I would <span class="green">${verb2}</span> like one and maybe finally win!"<br>
             I said, "well, good luck! I hope you <span class="green">${verb3}</span> like the <span class="green">${noun3}</span>"`,
@@ -76,7 +76,7 @@ $(document).ready(function () {
          id: 'callInSick',
          title: 'Call in sick for work 🤷🏻‍♀️',
          completeStory: (yourName, bodyPart, adjective, time, verb, noun, place, fakeEmail, adjective2, dayOfTheWeek) =>
-         `Hello, this is <span class="green">${yourName}</span>. I think I've got a touch of that <span class="green">${bodyPart}</span> bug that's been going around, and I'm <span class="green">${adjective}</span>  I wont be able to come in. I'll try and make it by <span class="green">${time},</span> but if not, I'll <span class="green">${verb}</span> and get some <span>${noun}</span> done at <span class="green">${place}</span>. If you need, you can reach me at <span class="green">${fakeEmail}</span>  Here's hoping I'll be <span class="green">${adjective2}</span> enough to come in <span class="green">${dayOfTheWeek}</span>.`,
+         `Hello, this is <span class="green">${yourName}</span>. I think I've got a touch of that <span class="green">${bodyPart}</span> bug that's been going around, and I'm <span class="green">${adjective}</span>  I wont be able to come in. I'll try and make it by <span class="green">${time}</span>, but if not, I'll <span class="green">${verb}</span> and get some <span>${noun}</span> done at <span class="green">${place}</span>. If you need, you can reach me at <span class="green">${fakeEmail}</span>  Here's hoping I'll be <span class="green">${adjective2}</span> enough to come in <span class="green">${dayOfTheWeek}</span>.`,
          inputs: [
             'Your name', 'Body part','Adjective','Time', 'Verb', 'Noun', 'Place','Fake email', 'adjective', 'Day of the week'
          ]
@@ -119,21 +119,21 @@ $(document).ready(function () {
       </form>`)
       
 
-   //get values from radio buttons
-   $(".poisonForm").on('submit',function (e) {
-      e.preventDefault()
-      const value = $('input[name="answer"]:checked').val()
+      $(".poisonForm").on('submit',function (e) {
+         e.preventDefault()
+         //get values from radio buttons
+         const value = $('input[name="answer"]:checked').val()
       
-      //match values with array
-      const findStory = stories.filter(function (story) {
-         return story['id'] === value;
+         //match values with array
+         const findStory = stories.filter(function (story) {
+            return story['id'] === value;
       })
-      
+
 
       //get from story inputs
       const storyInputs = findStory[0].inputs;
 
-      //display/add input options    
+      //display form   
       $('.section2').css('display','none')
       $('.section3').removeClass('hidden')
       $('.section3 h2').append(`Fill the spaces below`)
@@ -144,11 +144,10 @@ $(document).ready(function () {
       })
       $('.fillWords').append(`<button class="buttonSection3 fontFamilyText" type="submit">Next</button>`)
 
+      //grab values from user 
       $('.fillWords').on('submit', function(e){
          e.preventDefault();
          $('.section3').css('display', 'none')
-
-         //grab values from user 
          const arrayOfInputs = Array.from($("input[name='input']"))
          const results = arrayOfInputs.map(function (res){
             return $(res).val()

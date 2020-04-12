@@ -1,5 +1,12 @@
 /*media queries*/
 
+@media (max-width: 1125px) {
+  .section2 {
+    width: 45%;
+    transition: all 0.5s;
+  }
+}
+
 @media (max-width: 922px) {
   .play {
     margin-top: 61px;
@@ -15,12 +22,6 @@
     right: 36%;
     top: -35px;
   }
-
-  .section2 {
-    width: 45%;
-    /* margin-top:40px; */
-    transition: all 0.5s;
-  }
 }
 
 @media (max-width: 867px) {
@@ -29,7 +30,7 @@
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 746px) {
   .giggles {
     text-align: center;
   }
@@ -40,6 +41,12 @@
 
   .section3 h2 {
     margin-top: 50px;
+  }
+
+  .section2 {
+    margin-top: 35px;
+    width: 60%;
+    transition: all 0.5s;
   }
 
   .inputDevelopers {
@@ -69,12 +76,6 @@
   .section2 h2,
   .section3 h2 {
     font-size: 3rem;
-  }
-
-  .section2 {
-    margin-top: 35px;
-    width: 65%;
-    transition: all 0.5s;
   }
 
   .fillWords input {
@@ -107,6 +108,11 @@
 
   .buttonSection2 {
     width: 56%;
+  }
+
+  .section2 {
+    width: 88%;
+    transition: all 0.5s;
   }
 
   .section2 h2 {

@@ -1,3 +1,4 @@
+/*Section two, pick your poison*/
 .poisonForm {
   display: flex;
   border-radius: 14px;
@@ -14,12 +15,13 @@
   width: 30%;
   margin: 0 auto;
   margin-top: 25px;
-  /* margin-bottom:20px; */
+  margin-bottom: 20px;
 }
 
 .section2 h2 {
   font-size: 3rem;
   text-align: center;
+  padding-top: 10px;
 }
 
 .buttonSection2,
