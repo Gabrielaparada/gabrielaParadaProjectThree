@@ -50,3 +50,60 @@
 .buttonSection2:focus {
   border: 1px solid #1da81d;
 }
+
+input[type="radio"] {
+  vertical-align: middle;
+  margin: 0;
+  background-color: white;
+  margin-left: 5px;
+  margin-right: 10px;
+  opacity: 0;
+}
+
+.poisonLabel {
+  margin-left: 10px;
+  font-size: 1.7rem;
+  margin-bottom: 21px;
+}
+
+input[type="radio"],
+.poisonLabel {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: -27px;
+  bottom: 7px;
+  width: 19px;
+  height: 19px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0px 4px #1da81d;
+}
+
+input[type="radio"] + label::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: -25px;
+  bottom: 8px;
+  width: 34px;
+  height: 22px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label::after {
+  background-image: url(../../assets/check-solid.svg);
+  background-repeat: no-repeat;
+}
+
+input[type="radio"]:focus + label::before {
+  box-shadow: 0 0px 5px black;
+}
