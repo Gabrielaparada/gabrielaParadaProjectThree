@@ -1,6 +1,10 @@
 /*media queries*/
 
 @media (max-width: 1125px) {
+  .story {
+    width: 58%;
+    transition: all 0.5s;
+  }
   .section2 {
     width: 45%;
     transition: all 0.5s;
@@ -27,6 +31,7 @@
 @media (max-width: 867px) {
   .story {
     width: 82%;
+    transition: all 0.5s;
   }
 }
 
@@ -94,6 +99,7 @@
   }
   .story {
     margin-top: 70px;
+    transition: all 0.5s;
   }
 }
 
@@ -129,6 +135,7 @@
 
   .story {
     margin-top: 45px;
+    transition: all 0.5s;
   }
 
   .subHeading {

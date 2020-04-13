@@ -20,7 +20,7 @@ $(document).ready(function () {
          < input > elements of type <span>${noun}</span> are rendered as simple push <span>${noun}</span>, which can be <span>${verb}</span>  programmed to control ${noun3} functionality anywhere on a webpage as required when assigned an event handler function (typically for the <span>${noun2}</span> event)`,
 
          `<h2 class="subHeading fontFamilyDev">CSS</h2>
-         Cascading Style Sheets (CSS) is a <span>${adjective}</span> language used to <span>${verb}</span> the presentation of a <span>${noun3}</span> written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how <span>${noun}</span> should be rendered on screen, on <span>${noun2}</span>, in speech, or on other media.`,
+         Cascading Style Sheets (CSS) is a <span>${adjective}</span> language used to <span>${verb}</span> the presentation of a <span>${noun3}</span> written in HTML or XML. CSS describes how <span>${noun}</span> should be rendered on screen, on <span>${noun2}</span>, in speech, or on other media.`,
 
          `<h2 class="subHeading  fontFamilyDev">Arrays</h2>
          Arrays are list-like <span>${adjective}</span> objects whose prototype has methods to <span>${verb}</span> traversal and mutation operations. Neither the length of a JavaScript array nor the types of its <span>${noun}</span> are fixed. Since an array's <span>${noun3}</span> can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript arrays are not <span>${noun2}</span> to be dense; this depends on how the programmer chooses to use them`,

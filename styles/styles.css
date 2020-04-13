@@ -889,6 +889,7 @@ h4 {
   margin-bottom: 10px;
 }
 
+/*Not a developer landing page*/
 .background {
   background-image: url(../assets/darkness.png);
 }
@@ -1139,16 +1140,23 @@ input[type="radio"]:focus + label::before {
   padding: 9px;
   border-radius: 10px;
   width: 50%;
-}
-
-.again:hover,
-.again:focus {
   background-color: #1da81d;
   color: white;
 }
 
+.again:hover,
+.again:focus {
+  background-color: white;
+  color: black;
+}
+
 /*media queries*/
 @media (max-width: 1125px) {
+  .story {
+    width: 58%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
   .section2 {
     width: 45%;
     -webkit-transition: all 0.5s;
@@ -1175,6 +1183,8 @@ input[type="radio"]:focus + label::before {
 @media (max-width: 867px) {
   .story {
     width: 82%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
 }
 
@@ -1234,6 +1244,8 @@ input[type="radio"]:focus + label::before {
   }
   .story {
     margin-top: 70px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
 }
 
@@ -1264,6 +1276,8 @@ input[type="radio"]:focus + label::before {
   }
   .story {
     margin-top: 45px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .subHeading {
     font-size: 2rem;
