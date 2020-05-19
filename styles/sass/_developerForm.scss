@@ -43,6 +43,15 @@ input {
   padding: 10px;
 }
 
+input:focus{
+  -webkit-box-shadow: 10px 10px 4px -4px rgba(0,0,0,0.23);
+-moz-box-shadow: 10px 10px 4px -4px rgba(0,0,0,0.23);
+box-shadow: 10px 10px 4px -4px rgba(0,0,0,0.23);
+letter-spacing: 2px;
+border:2px solid black;
+outline: 0!important;
+}
+
 .button {
   width: 40%;
   margin: 0 auto;
@@ -51,13 +60,13 @@ input {
 }
 
 .button:hover {
-  background-color: #042037;
+  background-color: $accentColor;
   color: white;
   width: 93%;
   transition: all 0.8s;
 }
 
 .button:focus {
-  background-color: #042037;
+  background-color:$accentColor;
   color: white;
 }
