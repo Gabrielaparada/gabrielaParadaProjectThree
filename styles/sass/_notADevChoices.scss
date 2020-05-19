@@ -42,13 +42,13 @@
 .buttonSection2:hover,
 .gigglesButton:hover {
   color: black;
-  background-color: $noDevAccentColor;
+  background-color: #1da81d;
   border-radius: 15px;
   transition: all 0.5s;
 }
 
 .buttonSection2:focus {
-  border: 1px solid $noDevAccentColor;
+  border: 1px solid #1da81d;
 }
 
 input[type="radio"] {
@@ -84,7 +84,7 @@ input[type="radio"] + label::before {
   height: 19px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: 0 0px 4px $noDevAccentColor;
+  box-shadow: 0 0px 4px #1da81d;
 }
 
 input[type="radio"] + label::after {
@@ -100,7 +100,7 @@ input[type="radio"] + label::after {
 }
 
 input[type="radio"]:checked + label::after {
-  background-image: url(../../assets/check-solid.svg);
+  background-image: url(../assets/check-solid.svg);
   background-repeat: no-repeat;
 }
 
