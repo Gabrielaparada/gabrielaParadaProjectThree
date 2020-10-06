@@ -160,7 +160,6 @@ $(document).ready(function () {
          </button>`)
          $('.section4 h3').html((findStory[0].title))
          $('.section4 p').html(findStory[0].completeStory(...results))
-         
       })
       });
    })

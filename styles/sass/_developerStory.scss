@@ -5,6 +5,7 @@
   width: 45%;
   margin: 0 auto;
   margin-top: 100px;
+  margin-bottom:20px;
   padding: 30px;
   color: white;
   line-height: 31px;
@@ -36,8 +37,9 @@
 
 .back:hover,
 .back:focus {
-  background-color: #042037;
+  background-color: $accentColor;
   color: white;
+  outline: 0!important;
 }
 
 span {

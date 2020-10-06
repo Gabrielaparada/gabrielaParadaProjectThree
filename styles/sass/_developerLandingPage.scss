@@ -13,17 +13,19 @@
   border-radius: 10px;
   letter-spacing: 4px;
   animation: opacity 1.3s linear;
-  background-color: #496d89;
+  background-color:$primaryColor;
   color: white;
   margin-top: 23px;
 }
 
 .play:hover {
-  background-color: #042037;
+  background-color: $accentColor;
 }
 
 .play:focus {
-  background: #042037;
+  background: $accentColor;
+  outline: 0!important;
+  border: 1px solid white;
 }
 
 .neon {
@@ -58,7 +60,7 @@
 .notADevInner {
   text-align: center;
   position: absolute;
-  top: 90px;
+  top: 70px;
   left: 0;
   right: 0;
   animation: opacity 2s;

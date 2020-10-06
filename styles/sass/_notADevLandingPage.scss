@@ -5,13 +5,13 @@
 }
 .notADeveloper {
   color: white;
-  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-size: 5rem;
+  text-align: center;
 }
 
 .notADeveloper a {
@@ -33,7 +33,7 @@
   letter-spacing: 2px;
   font-weight: bold;
   animation: opacity 1.7s;
-  background-color: #1da81d;
+  background-color: $noDevAccentColor;
   color: white;
 }
 
