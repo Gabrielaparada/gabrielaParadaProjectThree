@@ -143,7 +143,7 @@ $(document).ready(function () {
          type="text" name="input" id="${input}" placeholder="${input}" required=""><label class="visuallyHidden" for="${input}">${input}</label>`)
       })
       $('.fillWords').append(`<button class="buttonSection3 fontFamilyText" type="submit">Next</button>`)
-
+      
       //grab values from user 
       $('.fillWords').on('submit', function(e){
          e.preventDefault();
