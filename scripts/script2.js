@@ -160,7 +160,7 @@ $(document).ready(function () {
             Let's do it again!
          </button>`)
          $('.section4 h3').html((findStory[0].title))
-         $('.section4 p').html(findStory[0].completeStory(...results))git
+         $('.section4 p').html(findStory[0].completeStory(...results))
          
       })
       });
