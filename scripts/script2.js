@@ -86,6 +86,7 @@ $(document).ready(function () {
 
 //dynamically add radio buttons to the page  
    $('.gigglesButton').on('click', function(){
+     console.log('hi')
       $('.notADeveloper').css('display', 'none')
       $('.section2').removeClass('hidden')
       $('.section2').append(`<h2>Pick your poison</h2>

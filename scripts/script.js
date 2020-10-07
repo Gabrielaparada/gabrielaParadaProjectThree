@@ -53,7 +53,7 @@ $(document).ready(function () {
       //display story
       $('.story').append(`
          <div class="buttonContainer"><br>
-            <button class="back fontFamilyText" onclick="window.location.href='./index.html'">Take me to the beginning!</button>
+            <button class="back fontFamilyText" onclick="window.location.href='../index.html'">Take me to the beginning!</button>
          </div>`).addClass("display")
       $('input').val('')
    })
