@@ -152,7 +152,6 @@ $(document).ready(function () {
          const results = arrayOfInputs.map(function (res){
             return $(res).val()
          })
-
          //display story
          $('.section4').removeClass('hidden')
          $('.section4').append(`<button onclick="window.location.href='./notADeveloper.html'" class="again fontFamilyText">
